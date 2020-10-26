@@ -5,15 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Buscador de películas</title>
     <!-- <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="icon" href="./assets/images/favicon.png" /> -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
-    <h1>Buscado de series</h1>
-    <form action="">
-      <input type="text" name="text" id="text" class="js-input" />
-      <input type="button" />
-    </form>
+    <header>
+      <h1 class="title">Buscado ando algo para no aburrirme!</h1>
+    </header>
+    <main>
+      <form action="" class="form">
+        <input
+          type="text"
+          name="text"
+          id="text"
+          placeholder="Busca aquí!"
+          class="js-input form__input"
+        />
+        <input type="button" value="Search" class="js-btn form__btn" />
+      </form>
+      <h2 class="fav-title">Series en cola:</h2>
+      <div class="container">
+        <ul class="js-favorites-list favorite-list"></ul>
+        <ul class="js-movie-list movie-list"></ul>
+      </div>
+    </main>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
